@@ -26,15 +26,15 @@ public class M5_Pt2_Calculadora {
 
             String numero1;
             do {
-                System.out.println("\n Introdueix el primer numero. ");
+                System.out.print("\nIntrodueix el primer numero: ");
                 numero1 = sc.nextLine();
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
 
             do {
-                System.out.println("\n Operació? (Indica el signe)");
-                System.out.println("+ = sumar \n - = restar \n"
+                System.out.println("\nQuina operació faras servir? (Indica el signe)");
+                System.out.println(" + = sumar \n - = restar \n"
                         + " x = multiplicar \n / = dividir \n * = elevar primer num al segon num."
                         + "\n % = residu");
                 operacion = sc.nextLine();
@@ -49,7 +49,7 @@ public class M5_Pt2_Calculadora {
 
             String numero2;
             do {
-                System.out.println("\n Introdueix el segon numero.");
+                System.out.print("\nIntrodueix el segon numero: ");
                 numero2 = sc.nextLine();
             } while (!numero2.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume2 = Double.parseDouble(numero2);
